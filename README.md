@@ -1,8 +1,8 @@
-\## 🩺 \*\*Diabetes Prediction Using Machine Learning\*\*
+\## 🩺 Diabetes Prediction Using Machine Learning
 
 
 
-\### \*\*Project Overview\*\*
+\### Project Overview
 
 
 
@@ -14,7 +14,7 @@ The study addresses a highly imbalanced healthcare dataset and compares the perf
 
 
 
-\### \*\*Objectives\*\*
+\### Objectives
 
 * Perform comprehensive data cleaning and preprocessing.
 * Conduct exploratory data analysis (EDA) to uncover key risk factors associated with diabetes.
@@ -24,13 +24,13 @@ The study addresses a highly imbalanced healthcare dataset and compares the perf
 
 
 
-\### \*\*Dataset Description\*\*
+\### Dataset Description
 
 The dataset contains demographic, lifestyle, and clinical information from over 100,000 patients.
 
 
 
-\#### \*\*Features\*\*
+\#### Features
 
 * Gender
 * Age
@@ -41,7 +41,7 @@ The dataset contains demographic, lifestyle, and clinical information from over 
 * HbA1c Level
 * Blood Glucose Level
 
-\#### \*\*Target Variable\*\*
+\#### Target Variable
 
 \*\*Diabetes Status\*\*
 
