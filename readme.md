@@ -1,20 +1,12 @@
-\## 🩺 Diabetes Prediction Using Machine Learning
+# 🩺 Diabetes Prediction Using Machine Learning
+
+### Project Overview
 
 
 
-\### Project Overview
+Diabetes is one of the most prevalent chronic diseases worldwide and early diagnosis is critical for preventing severe health complications. This project develops and evaluates machine learning models capable of predicting the probability of diabetes diagnosis using demographic, lifestyle, and clinical indicators. The study addresses a highly imbalanced healthcare dataset and compares the performance of Logistic Regression and Random Forest classifiers to identify the most reliable predictive framework for diabetes risk assessment.
 
-
-
-Diabetes is one of the most prevalent chronic diseases worldwide and early diagnosis is critical for preventing severe health complications. This project develops and evaluates machine learning models capable of predicting the probability of diabetes diagnosis using demographic, lifestyle, and clinical indicators.
-
-
-
-The study addresses a highly imbalanced healthcare dataset and compares the performance of Logistic Regression and Random Forest classifiers to identify the most reliable predictive framework for diabetes risk assessment.
-
-
-
-\### Objectives
+### Objectives
 
 * Perform comprehensive data cleaning and preprocessing.
 * Conduct exploratory data analysis (EDA) to uncover key risk factors associated with diabetes.
@@ -23,15 +15,10 @@ The study addresses a highly imbalanced healthcare dataset and compares the perf
 * Develop a predictive framework capable of supporting early diabetes screening and risk assessment.
 
 
-
-\### Dataset Description
+### Dataset Description
 
 The dataset contains demographic, lifestyle, and clinical information from over 100,000 patients.
-
-
-
-\#### Features
-
+#### Features
 * Gender
 * Age
 * Hypertension
@@ -41,17 +28,12 @@ The dataset contains demographic, lifestyle, and clinical information from over 
 * HbA1c Level
 * Blood Glucose Level
 
-\#### Target Variable
+#### Target Variable
+##### Diabetes Status
+0 = Non-Diabetic
+1 = Diabetic
 
-\*\*Diabetes Status\*\*
-
-\*\*0\*\* = Non-Diabetic
-
-\*\*1\*\* = Diabetic
-
-
-
-\#### \*\*Class Distribution\*\*
+#### Class Distribution
 
 Non-Diabetic: 91.2%
 
@@ -63,7 +45,7 @@ The substantial class imbalance required the implementation of class-weighted ma
 
 
 
-\### \*\*Exploratory Data Analysis\*\*
+### Exploratory Data Analysis
 
 
 
@@ -71,66 +53,65 @@ Key insights obtained during exploratory analysis include:
 
 
 
-\#### \*\*Clinical Indicators\*\*
+#### Clinical Indicators
 
-* \*\*HbA1c Level\*\* showed a strong positive association with diabetes (r = 0.41).
-* \*\*Blood Glucose Level\*\* exhibited the highest correlation with diabetes diagnosis (r = 0.42).
+* HbA1c Level showed a strong positive association with diabetes (r = 0.41).
+* Blood Glucose Level exhibited the highest correlation with diabetes diagnosis (r = 0.42).
 * Diabetic patients recorded substantially higher average glucose concentrations and HbA1c levels than non-diabetic individuals.
 
 
 
-\#### \*\*Demographic Factors\*\*
+#### Demographic Factors
 
 Diabetes prevalence increased significantly with age.
 
-* \*\*Middle-aged\*\* and \*\*older adults\*\* exhibited the highest diagnosis rates.
+* Middle-aged and older adults exhibited the highest diagnosis rates.
 * Female patients represented a larger proportion of the dataset population.
 
 
 
-\#### \*\*Comorbidities\*\*
+#### Comorbidities
 
-* \*\*28%\*\* of hypertensive individuals were diagnosed with diabetes.
-* \*\*32.3%\*\* of individuals with heart disease were diabetic.
+* 28% of hypertensive individuals were diagnosed with diabetes.
+* 32.3% of individuals with heart disease were diabetic.
 * Diabetes prevalence was considerably lower among individuals without these conditions.
 
-Lifestyle Factors
+#### Lifestyle Factors
 
 * Former smokers demonstrated the highest diabetes prevalence among smoking categories, suggesting a strong association between smoking history and diabetes risk.
 
 
 
-\### \*\*Machine Learning Models\*\*
+### Machine Learning Models
 
-\#### \*\*Logistic Regression (Baseline Model):\*\* A class-weighted Logistic Regression model was implemented as the baseline classifier.
+#### Logistic Regression (Baseline Model):
+A class-weighted Logistic Regression model was implemented as the baseline classifier.
 
-
-
-\#### \*\*Random Forest Classifier:\*\* A Random Forest model was developed and optimized using:
+#### Random Forest Classifier:
+A Random Forest model was developed and optimized using:
 
 * GridSearchCV
 * Cross-validation
 * Hyperparameter tuning
 * Class balancing techniques
-* 
 
-\### \*\*Model Performance\*\*
+### Model Performance
 
 Random Forest (Test Set)
 
-!\[ROC Curve](visuals/roc\_curve.png)
+![ROC Curve Chart](Diabetes%20Png/roc_curve.png)
 
 
 
-!\[Confusion Matrix](visuals/confusion\_matrix.png)
+![Confusion Matrix](Diabetes%20Png/confusion_matrix.png)
 
 
 
-!\[Correlation Heatmap](visuals/correlation\_heatmap.png)
+![Correlation Heatmap](Diabetes%20Png/correlation_heatmap.png)
 
 
 
-!\[Comparison of Models](visuals/model\_performance.png)
+![Model Performance Table](Diabetes%20Png/model_performance.png)
 
 
 
@@ -138,7 +119,7 @@ The optimized Random Forest Classifier outperformed Logistic Regression across a
 
 
 
-\#### \*\*Key achievements include:\*\*
+#### Key achievements include:
 
 
 
@@ -153,7 +134,7 @@ The model successfully balances predictive performance with clinical relevance b
 
 
 
-\### \*\*Key Findings\*\*
+### Key Findings
 
 * Blood Glucose Level and HbA1c Level emerged as the strongest predictors of diabetes diagnosis.
 * Diabetes prevalence increases substantially with age.
@@ -163,7 +144,7 @@ The model successfully balances predictive performance with clinical relevance b
 
 
 
-\### \*\*Technologies Used\*\*
+### Technologies Used
 
 * Python
 * Pandas
@@ -176,7 +157,7 @@ The model successfully balances predictive performance with clinical relevance b
 
 
 
-\### \*\*Project Structure\*\*
+### Project Structure
 
 Diabetes-Prediction/
 
